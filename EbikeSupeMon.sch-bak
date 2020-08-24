@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -14,414 +14,81 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Amplifier_Current:INA240A3PW U?
-U 1 1 5F35AD40
-P 4600 3550
-F 0 "U?" H 4944 3596 50  0000 L CNN
-F 1 "INA240A3PW" H 4944 3505 50  0000 L CNN
-F 2 "Package_SO:TSSOP-8_4.4x3mm_P0.65mm" H 4600 2900 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ina240.pdf" H 4750 3700 50  0001 C CNN
-	1    4600 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Shunt_US R?
-U 1 1 5F35B2CE
-P 3950 3550
-F 0 "R?" H 3863 3596 50  0000 R CNN
-F 1 "500u ohm 2Watts" H 3863 3505 50  0000 R CNN
-F 2 "" V 3880 3550 50  0001 C CNN
-F 3 "~" H 3950 3550 50  0001 C CNN
-	1    3950 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J?
-U 1 1 5F35E256
-P 3850 3000
-F 0 "J?" V 3814 2812 50  0000 R CNN
-F 1 "Bat IN" V 3723 2812 50  0000 R CNN
-F 2 "" H 3850 3000 50  0001 C CNN
-F 3 "~" H 3850 3000 50  0001 C CNN
-	1    3850 3000
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3950 3200 3950 3250
-Wire Wire Line
-	4100 3450 4300 3450
-Wire Wire Line
-	4100 3650 4300 3650
-Wire Wire Line
-	4500 3200 4500 3250
-$Comp
 L RF_Module:ESP32-WROOM-32 U?
 U 1 1 5F36260C
-P 7400 3400
-F 0 "U?" H 7400 4981 50  0000 C CNN
-F 1 "ESP32-WROOM-32" H 7400 4890 50  0000 C CNN
-F 2 "RF_Module:ESP32-WROOM-32" H 7400 1900 50  0001 C CNN
-F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 7100 3450 50  0001 C CNN
-	1    7400 3400
+P 9200 3400
+F 0 "U?" H 9200 4981 50  0000 C CNN
+F 1 "ESP32-WROOM-32" H 9200 4890 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32" H 9200 1900 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 8900 3450 50  0001 C CNN
+	1    9200 3400
 	1    0    0    -1  
 $EndComp
-Text Notes 3700 2800 0    50   ~ 0
-Big ass power connector here\n10-12 awg wires soldered to the PCB probably
+$Comp
+L power:GND #PWR?
+U 1 1 5F3946E6
+P 9200 4900
+F 0 "#PWR?" H 9200 4650 50  0001 C CNN
+F 1 "GND" H 9205 4727 50  0000 C CNN
+F 2 "" H 9200 4900 50  0001 C CNN
+F 3 "" H 9200 4900 50  0001 C CNN
+	1    9200 4900
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	4600 3850 4600 4000
-Wire Wire Line
-	4600 4000 4800 4000
-Wire Wire Line
-	4800 4000 4800 3200
-Wire Wire Line
-	4700 3850 4700 3900
-Wire Wire Line
-	4500 3850 4500 3900
+	9200 4900 9200 4800
 $Comp
 L Connector_Generic:Conn_01x02 J?
-U 1 1 5F365F3B
-P 3850 4150
-F 0 "J?" V 3722 3962 50  0000 R CNN
-F 1 "Motor Out" V 3813 3962 50  0000 R CNN
-F 2 "" H 3850 4150 50  0001 C CNN
-F 3 "~" H 3850 4150 50  0001 C CNN
-	1    3850 4150
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	3950 3950 3950 3750
-Wire Wire Line
-	3850 3200 3850 3300
-Wire Wire Line
-	3750 3300 3850 3300
-Connection ~ 3850 3300
-Wire Wire Line
-	3850 3300 3850 3950
-Text Notes 3000 3350 0    50   ~ 0
-Power connector\n1=- 2=+
-Text Notes 5050 3400 0    50   ~ 0
-Output \n0dV = V+/2\nVout can be calculated using chosen values
-Text Notes 5700 3200 0    50   ~ 0
-Vd=3v/100\nRs=Vd/60=0.0005\nPrs=1.8
-$Comp
-L Device:L L?
-U 1 1 5F36A167
-P 6750 5500
-F 0 "L?" V 6940 5500 50  0000 C CNN
-F 1 "2.2uF" V 6849 5500 50  0000 C CNN
-F 2 "" H 6750 5500 50  0001 C CNN
-F 3 "~" H 6750 5500 50  0001 C CNN
-	1    6750 5500
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6350 5500 6450 5500
-$Comp
-L Device:C C?
-U 1 1 5F36BA2F
-P 5550 4900
-F 0 "C?" V 5298 4900 50  0000 C CNN
-F 1 "0.1uF" V 5389 4900 50  0000 C CNN
-F 2 "" H 5588 4750 50  0001 C CNN
-F 3 "~" H 5550 4900 50  0001 C CNN
-	1    5550 4900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5700 4900 6450 4900
-Wire Wire Line
-	6450 4900 6450 5500
-Connection ~ 6450 5500
-Wire Wire Line
-	6450 5500 6600 5500
-Wire Wire Line
-	4750 5800 4600 5800
-Wire Wire Line
-	4600 5800 4600 4900
-Wire Wire Line
-	4600 4900 5400 4900
-Text GLabel 4000 5600 0    50   Input ~ 0
-VBatt
-Text GLabel 4100 3250 2    50   Input ~ 0
-VBatt
-Wire Wire Line
-	4100 3250 3950 3250
-Connection ~ 3950 3250
-Wire Wire Line
-	3950 3250 3950 3350
-$Comp
-L power:GND #PWR?
-U 1 1 5F36DF9D
-P 3750 3300
-F 0 "#PWR?" H 3750 3050 50  0001 C CNN
-F 1 "GND" V 3755 3172 50  0000 R CNN
-F 2 "" H 3750 3300 50  0001 C CNN
-F 3 "" H 3750 3300 50  0001 C CNN
-	1    3750 3300
+U 1 1 5F395F56
+P 4650 1250
+F 0 "J?" V 4522 1330 50  0000 L CNN
+F 1 "Key switch" V 4613 1330 50  0000 L CNN
+F 2 "" H 4650 1250 50  0001 C CNN
+F 3 "~" H 4650 1250 50  0001 C CNN
+	1    4650 1250
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
-U 1 1 5F36E707
-P 4500 3900
-F 0 "#PWR?" H 4500 3650 50  0001 C CNN
-F 1 "GND" H 4505 3727 50  0000 C CNN
-F 2 "" H 4500 3900 50  0001 C CNN
-F 3 "" H 4500 3900 50  0001 C CNN
-	1    4500 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5F36EC2A
-P 4700 3900
-F 0 "#PWR?" H 4700 3650 50  0001 C CNN
-F 1 "GND" H 4705 3727 50  0000 C CNN
-F 2 "" H 4700 3900 50  0001 C CNN
-F 3 "" H 4700 3900 50  0001 C CNN
-	1    4700 3900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4500 3200 4650 3200
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5F36EEB5
-P 4650 3200
-F 0 "#PWR?" H 4650 3050 50  0001 C CNN
-F 1 "+3.3V" H 4665 3373 50  0000 C CNN
-F 2 "" H 4650 3200 50  0001 C CNN
-F 3 "" H 4650 3200 50  0001 C CNN
-	1    4650 3200
-	1    0    0    -1  
-$EndComp
-Connection ~ 4650 3200
-Wire Wire Line
-	4650 3200 4800 3200
-$Comp
-L power:GND #PWR?
-U 1 1 5F36F723
-P 4300 5100
-F 0 "#PWR?" H 4300 4850 50  0001 C CNN
-F 1 "GND" H 4305 4927 50  0000 C CNN
-F 2 "" H 4300 5100 50  0001 C CNN
-F 3 "" H 4300 5100 50  0001 C CNN
-	1    4300 5100
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5F36F8C6
-P 7650 5500
-F 0 "#PWR?" H 7650 5350 50  0001 C CNN
-F 1 "+3.3V" V 7665 5628 50  0000 L CNN
-F 2 "" H 7650 5500 50  0001 C CNN
-F 3 "" H 7650 5500 50  0001 C CNN
-	1    7650 5500
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5F39682B
+P 5550 1250
+F 0 "J?" V 5422 1330 50  0000 L CNN
+F 1 "Controller enable" V 5513 1330 50  0000 L CNN
+F 2 "" H 5550 1250 50  0001 C CNN
+F 3 "~" H 5550 1250 50  0001 C CNN
+	1    5550 1250
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:C C?
-U 1 1 5F371C79
-P 4450 6100
-F 0 "C?" H 4335 6054 50  0000 R CNN
-F 1 "1uF" H 4335 6145 50  0000 R CNN
-F 2 "" H 4488 5950 50  0001 C CNN
-F 3 "~" H 4450 6100 50  0001 C CNN
-	1    4450 6100
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
-	4750 5900 4450 5900
+	4650 1050 4650 1000
 Wire Wire Line
-	4450 5900 4450 5950
-$Comp
-L power:GND #PWR?
-U 1 1 5F3729AF
-P 4450 6300
-F 0 "#PWR?" H 4450 6050 50  0001 C CNN
-F 1 "GND" H 4455 6127 50  0000 C CNN
-F 2 "" H 4450 6300 50  0001 C CNN
-F 3 "" H 4450 6300 50  0001 C CNN
-	1    4450 6300
-	1    0    0    -1  
-$EndComp
+	4650 1000 5550 1000
 Wire Wire Line
-	4450 6250 4450 6300
+	5550 1000 5550 1050
 Wire Wire Line
-	4750 6000 4750 6250
+	5450 1050 5450 950 
 Wire Wire Line
-	4750 6250 4450 6250
-Connection ~ 4450 6250
+	5450 950  4550 950 
 Wire Wire Line
-	6350 5700 5300 5700
-Wire Wire Line
-	5300 5700 5300 5600
-Wire Wire Line
-	5500 5600 5500 5500
-Wire Wire Line
-	5500 5600 6350 5600
-$Comp
-L Device:C C?
-U 1 1 5F37B976
-P 7050 5650
-F 0 "C?" H 6935 5604 50  0000 R CNN
-F 1 "22uF" H 6935 5695 50  0000 R CNN
-F 2 "" H 7088 5500 50  0001 C CNN
-F 3 "~" H 7050 5650 50  0001 C CNN
-	1    7050 5650
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	7050 5500 6900 5500
-Connection ~ 6900 5500
-Connection ~ 7050 5500
-Text Label 6350 5800 0    50   ~ 0
-3.3vEnable
-NoConn ~ 6350 5900
-Wire Wire Line
-	7050 5500 7350 5500
-$Comp
-L Device:C C?
-U 1 1 5F38228C
-P 7350 5650
-F 0 "C?" H 7235 5604 50  0000 R CNN
-F 1 "22uF" H 7235 5695 50  0000 R CNN
-F 2 "" H 7388 5500 50  0001 C CNN
-F 3 "~" H 7350 5650 50  0001 C CNN
-	1    7350 5650
-	-1   0    0    1   
-$EndComp
-Connection ~ 7350 5500
-Wire Wire Line
-	7350 5500 7650 5500
-$Comp
-L power:GND #PWR?
-U 1 1 5F382670
-P 7350 5850
-F 0 "#PWR?" H 7350 5600 50  0001 C CNN
-F 1 "GND" H 7355 5677 50  0000 C CNN
-F 2 "" H 7350 5850 50  0001 C CNN
-F 3 "" H 7350 5850 50  0001 C CNN
-	1    7350 5850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7350 5800 7350 5850
-$Comp
-L Device:C C?
-U 1 1 5F38346D
-P 7650 5650
-F 0 "C?" H 7535 5604 50  0000 R CNN
-F 1 "22uF" H 7535 5695 50  0000 R CNN
-F 2 "" H 7688 5500 50  0001 C CNN
-F 3 "~" H 7650 5650 50  0001 C CNN
-	1    7650 5650
-	-1   0    0    1   
-$EndComp
-Connection ~ 7650 5500
-Wire Wire Line
-	7650 5800 7350 5800
-Connection ~ 7350 5800
-Wire Wire Line
-	7350 5800 7050 5800
-Wire Wire Line
-	4750 5600 5300 5600
-Connection ~ 4750 5600
-$Comp
-L LMR36006FSC3RNXTQ1:LMR36006FSC3RNXTQ1 U?
-U 1 1 5F36919A
-P 4750 5500
-F 0 "U?" H 5550 5887 60  0000 C CNN
-F 1 "LMR36015SC3QRNXTQ1" H 5550 5781 60  0000 C CNN
-F 2 "RNX12_TEX" H 5550 5740 60  0001 C CNN
-F 3 "" H 4750 5500 60  0000 C CNN
-	1    4750 5500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5500 5500 4750 5500
-$Comp
-L power:GND #PWR?
-U 1 1 5F3873EE
-P 5550 5400
-F 0 "#PWR?" H 5550 5150 50  0001 C CNN
-F 1 "GND" V 5555 5272 50  0000 R CNN
-F 2 "" H 5550 5400 50  0001 C CNN
-F 3 "" H 5550 5400 50  0001 C CNN
-	1    5550 5400
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5550 5400 5550 5500
-Wire Wire Line
-	5550 5500 5500 5500
-Connection ~ 5500 5500
-$Comp
-L Device:C C?
-U 1 1 5F388D04
-P 4100 5350
-F 0 "C?" H 3985 5304 50  0000 R CNN
-F 1 "4.7uF" H 3985 5395 50  0000 R CNN
-F 2 "" H 4138 5200 50  0001 C CNN
-F 3 "~" H 4100 5350 50  0001 C CNN
-	1    4100 5350
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5F3894A6
-P 4300 5350
-F 0 "C?" H 4185 5304 50  0000 R CNN
-F 1 "220uF" H 4185 5395 50  0000 R CNN
-F 2 "" H 4338 5200 50  0001 C CNN
-F 3 "~" H 4300 5350 50  0001 C CNN
-	1    4300 5350
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5F389B86
-P 4500 5350
-F 0 "C?" H 4385 5304 50  0000 R CNN
-F 1 "220uF" H 4385 5395 50  0000 R CNN
-F 2 "" H 4538 5200 50  0001 C CNN
-F 3 "~" H 4500 5350 50  0001 C CNN
-	1    4500 5350
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4000 5600 4100 5600
-Wire Wire Line
-	4100 5500 4100 5600
-Connection ~ 4100 5600
-Wire Wire Line
-	4100 5600 4300 5600
-Wire Wire Line
-	4300 5500 4300 5600
-Connection ~ 4300 5600
-Wire Wire Line
-	4300 5600 4500 5600
-Wire Wire Line
-	4500 5500 4500 5600
-Connection ~ 4500 5600
-Wire Wire Line
-	4500 5600 4750 5600
-Wire Wire Line
-	4500 5200 4500 5150
-Wire Wire Line
-	4500 5150 4300 5150
-Wire Wire Line
-	4100 5150 4100 5200
-Wire Wire Line
-	4300 5200 4300 5150
-Connection ~ 4300 5150
-Wire Wire Line
-	4300 5150 4100 5150
-Wire Wire Line
-	4300 5100 4300 5150
-Wire Wire Line
-	6350 6000 6900 6000
-Wire Wire Line
-	6900 5500 6900 6000
+	4550 950  4550 1050
+Text Label 9800 2300 0    50   ~ 0
+TXD0
+Text Label 9800 2500 0    50   ~ 0
+RXD0
+Text Label 8600 2200 2    50   ~ 0
+EN
+Text Label 9800 2200 0    50   ~ 0
+IO0
+$Sheet
+S 1200 4650 700  1150
+U 5F3EA406
+F0 "Sheet5F3EA405" 50
+F1 "High Power.sch" 50
+F2 "Isense" O R 1900 4900 50 
+F3 "VBatt" I R 1900 5050 50 
+F4 "3.3vEnable" I R 1900 5200 50 
+F5 "BattVRead" O R 1900 5350 50 
+F6 "GND" I R 1900 5550 50 
+F7 "3.3Reg" O R 1900 5700 50 
+$EndSheet
 $EndSCHEMATC
