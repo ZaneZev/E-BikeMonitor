@@ -1,0 +1,29 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# EVP-AKB11A
+#
+DEF EVP-AKB11A S 0 40 Y Y 1 L N
+F0 "S" -301 100 50 H V L BNN
+F1 "EVP-AKB11A" -301 -201 50 H V L BNN
+F2 "SW_EVP-AKB11A" 0 0 50 H I L BNN
+F3 "None" 0 0 50 H I L BNN
+F4 "None" 0 0 50 H I L BNN
+F5 "Panasonic" 0 0 50 H I L BNN
+F6 "Unavailable" 0 0 50 H I L BNN
+F7 "Switch Tactile N.O. SPST Rectangular Button Gull Wing 0.02A 15VDC 200000Cycles 1.6N SMD Embossed T/R" 0 0 50 H I L BNN
+F8 "EVP-AKB11A" 0 0 50 H I L BNN
+DRAW
+C -200 0 32 0 0 10 N
+C 200 0 32 0 0 10 N
+P 2 0 0 10 -370 0 -230 0 N
+P 2 0 0 10 230 0 370 0 N
+P 2 0 0 10 170 0 -100 100 N
+X A 1 -400 0 100 R 40 40 0 0 P 
+X A' 2 400 0 100 L 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library

@@ -1,0 +1,33 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555D
+D NE555DG4, Timer, 4.5 To 16V, 8-Pin SOIC-8
+K
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP SKRHAAE010
+D Multi-Directional Switches 4 Dir Center Push 50mA 12V DC
+K
+F https://componentsearchengine.com/Datasheets/1/SKRHAAE010.pdf
+$ENDCMP
+#
+$CMP SIZ322DT-T1-GE3
+D MOSFET 25V Vds 16V Vgs PowerPAIR 3 x 3
+K
+F https://componentsearchengine.com/Datasheets/1/SIZ322DT-T1-GE3.pdf
+$ENDCMP
+#
+$CMP MAX14591ETA+T
+D MAXIM INTEGRATED PRODUCTS - MAX14591ETA+T - LEVEL TRANSLATOR, 2-CH, TDFN-8
+K
+F https://componentsearchengine.com/Datasheets/1/MAX14591ETA+T.pdf
+$ENDCMP
+#
+$CMP 629105136821
+D Wurth Elektronik Right Angle SMT Female Type B Version 2 Micro USB Connector, 30 V ac, 1A
+K
+F https://componentsearchengine.com/Datasheets/1/629105136821.pdf
+$ENDCMP
+#
+#End Doc Library

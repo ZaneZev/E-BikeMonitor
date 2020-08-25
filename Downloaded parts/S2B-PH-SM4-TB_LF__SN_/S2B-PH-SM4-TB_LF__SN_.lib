@@ -1,0 +1,30 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# S2B-PH-SM4-TB(LF)(SN)
+#
+DEF S2B-PH-SM4-TB(LF)(SN) P 0 40 Y Y 1 L N
+F0 "P" -50 150 50 H V L BNN
+F1 "S2B-PH-SM4-TB(LF)(SN)" -50 -200 50 H V L BNN
+F2 "JST_S2B-PH-SM4-TB(LF)(SN)" 0 0 50 H I L BNN
+F3 "PH Series 2 Position 2 mm Pitch Surface Mount Side Entry Shrouded Header" 0 0 50 H I L BNN
+F4 "455-1749-1-ND" 0 0 50 H I L BNN
+F5 "None" 0 0 50 H I L BNN
+F6 "JST Sales" 0 0 50 H I L BNN
+F7 "https://www.digikey.com/product-detail/en/jst-sales-america-inc/S2B-PH-SM4-TB_LF__SN_/455-1749-1-ND/926846?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" 0 0 50 H I L BNN
+F8 "S2B-PH-SM4-TB_LF__SN_" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 30 0 50 100 50 N
+P 2 0 0 30 0 -50 100 -50 N
+P 2 0 0 10 -50 150 -50 -150 N
+P 2 0 0 10 -50 -150 200 -150 N
+P 2 0 0 10 200 -150 200 150 N
+P 2 0 0 10 200 150 -50 150 N
+X 1 1 -200 50 200 R 40 40 0 0 P 
+X 2 2 -200 -50 200 R 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library

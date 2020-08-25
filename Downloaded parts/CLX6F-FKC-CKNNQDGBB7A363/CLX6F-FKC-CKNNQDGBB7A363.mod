@@ -1,0 +1,80 @@
+PCBNEW-LibModule-V1  
+# encoding utf-8
+Units mm
+$INDEX
+SOJ100P350X290-6N
+$EndINDEX
+$MODULE SOJ100P350X290-6N
+Po 0 0 0 15 00000000 00000000 ~~
+Li SOJ100P350X290-6N
+Cd 
+Sc 00000000
+At SMD
+Op 0 0 0
+.SolderMask 0
+.SolderPaste 0
+T0 1.84041 -3.2357 1.00022 1.00022 0 0.05 N V 21 "SOJ100P350X290-6N"
+T1 0.975765 2.86722 1.00078 1.00078 0 0.05 N V 21 "VAL**"
+DS -0.6 -1.7 0.6 -1.7 0.2 21
+DS 0.6 -1.7 0.6 1.7 0.2 21
+DS 0.6 1.7 -0.6 1.7 0.2 21
+DS -0.6 1.7 -0.6 -1.7 0.2 21
+DC -1.5 -2.1 -1.27639 -2.1 0.2 21
+DC -1.5 -2.1 -1.35858 -2.1 0.2 21
+DS -2.45 -2 2.45 -2 0.05 26
+DS 2.45 -2 2.45 2 0.05 26
+DS 2.45 2 -2.45 2 0.05 26
+DS -2.45 2 -2.45 -2 0.05 26
+DP 0 0 0 0 3 0.05 21
+Dl -0.6 -1.7
+Dl -0.1 -1.6
+Dl -0.6 -1.2
+$PAD
+Sh "1" R 1.25 0.8 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -1.55 -1
+$EndPAD
+$PAD
+Sh "2" R 1.25 0.8 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -1.55 0
+$EndPAD
+$PAD
+Sh "3" R 1.25 0.8 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -1.55 1
+$EndPAD
+$PAD
+Sh "4" R 1.25 0.8 0 0 1800
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 1.55 1
+$EndPAD
+$PAD
+Sh "5" R 1.25 0.8 0 0 1800
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 1.55 0
+$EndPAD
+$PAD
+Sh "6" R 1.25 0.8 0 0 1800
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 1.55 -1
+$EndPAD
+$EndMODULE SOJ100P350X290-6N
