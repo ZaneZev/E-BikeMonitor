@@ -2,4 +2,5 @@
   (lib (name EbikeSupeMon-rescue)(type Legacy)(uri ${KIPRJMOD}/EbikeSupeMon-rescue.lib)(options "")(descr ""))
   (lib (name my_parts)(type Legacy)(uri "${KIPRJMOD}/porject lib/my parts.lib")(options "")(descr ""))
   (lib (name eec)(type Legacy)(uri "${KIPRJMOD}/Downloaded parts/Trans_Diodes Inc._DMP10H4D2S-7/eec.lib")(options "")(descr ""))
+  (lib (name LTC7103)(type Legacy)(uri "${KIPRJMOD}/Downloaded parts/LTC7103/2020-08-31_20-52-23.lib")(options "")(descr ""))
 )
