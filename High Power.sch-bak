@@ -289,100 +289,6 @@ Wire Wire Line
 Connection ~ 4850 4750
 Wire Wire Line
 	4850 4750 5100 4750
-Text HLabel 9000 2800 3    50   Input ~ 0
-5v_Bus
-$Comp
-L eec:DMP10H4D2S-7 Q1
-U 1 1 5F464E1B
-P 8500 2150
-F 0 "Q1" H 9188 2154 50  0000 L CNN
-F 1 "DMP10H4D2S-7" H 9188 2245 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 8500 2750 50  0001 L CNN
-F 3 "https://www.diodes.com/assets/Datasheets/DMP10H4D2S.pdf" H 8500 2850 50  0001 L CNN
-F 4 "Yes" H 8500 2950 50  0001 L CNN "automotive"
-F 5 "Grade 0" H 8500 3050 50  0001 L CNN "automotive grade"
-F 6 "Trans" H 8500 3150 50  0001 L CNN "category"
-F 7 "-0.27A" H 8500 3250 50  0001 L CNN "continuous drain current"
-F 8 "False" H 8500 3350 50  0001 L CNN "depletion mode"
-F 9 "Discrete Semiconductors" H 8500 3450 50  0001 L CNN "device class L1"
-F 10 "Transistors" H 8500 3550 50  0001 L CNN "device class L2"
-F 11 "MOSFETs" H 8500 3650 50  0001 L CNN "device class L3"
-F 12 "MOSFET P-CH 100V 0.27A SOT23" H 8500 3750 50  0001 L CNN "digikey description"
-F 13 "DMP10H4D2S-7DICT-ND" H 8500 3850 50  0001 L CNN "digikey part number"
-F 14 "-100V" H 8500 3950 50  0001 L CNN "drain to source breakdown voltage"
-F 15 "2.8Ω" H 8500 4050 50  0001 L CNN "drain to source resistance"
-F 16 "-100V" H 8500 4150 50  0001 L CNN "drain to source voltage"
-F 17 "https://www.diodes.com/assets/Package-Files/SOT23.pdf" H 8500 4250 50  0001 L CNN "footprint url"
-F 18 "1.8nC @ -10V" H 8500 4350 50  0001 L CNN "gate charge at vgs"
-F 19 "20V" H 8500 4450 50  0001 L CNN "gate to source voltage"
-F 20 "1.1mm" H 8500 4550 50  0001 L CNN "height"
-F 21 "87pF @ -25V" H 8500 4650 50  0001 L CNN "input capacitace at vds"
-F 22 "SOT92P240X102-3" H 8500 4750 50  0001 L CNN "ipc land pattern name"
-F 23 "Yes" H 8500 4850 50  0001 L CNN "lead free"
-F 24 "e95a4f611cd0eae9" H 8500 4950 50  0001 L CNN "library id"
-F 25 "Diodes Inc." H 8500 5050 50  0001 L CNN "manufacturer"
-F 26 "-1.3V" H 8500 5150 50  0001 L CNN "max forward diode voltage"
-F 27 "+150°C" H 8500 5250 50  0001 L CNN "max junction temp"
-F 28 "Trans MOSFET P-CH 100V 0.27A Automotive 3-Pin SOT-23 T/R" H 8500 5350 50  0001 L CNN "mouser description"
-F 29 "621-DMP10H4D2S-7" H 8500 5450 50  0001 L CNN "mouser part number"
-F 30 "1" H 8500 5550 50  0001 L CNN "number of P channels"
-F 31 "1" H 8500 5650 50  0001 L CNN "number of channels"
-F 32 "SOT23-3" H 8500 5750 50  0001 L CNN "package"
-F 33 "0.38W" H 8500 5850 50  0001 L CNN "power dissipation"
-F 34 "-1A" H 8500 5950 50  0001 L CNN "pulse drain current"
-F 35 "24.8nC" H 8500 6050 50  0001 L CNN "reverse recovery charge"
-F 36 "17.8ns" H 8500 6150 50  0001 L CNN "reverse recovery time"
-F 37 "Yes" H 8500 6250 50  0001 L CNN "rohs"
-F 38 "333°C/W" H 8500 6350 50  0001 L CNN "rthja max"
-F 39 "0.013mm" H 8500 6450 50  0001 L CNN "standoff height"
-F 40 "+150°C" H 8500 6550 50  0001 L CNN "temperature range high"
-F 41 "-55°C" H 8500 6650 50  0001 L CNN "temperature range low"
-F 42 "-3V" H 8500 6750 50  0001 L CNN "threshold vgs max"
-F 43 "-1V" H 8500 6850 50  0001 L CNN "threshold vgs min"
-F 44 "8.4ns" H 8500 6950 50  0001 L CNN "turn off delay time"
-F 45 "3.3ns" H 8500 7050 50  0001 L CNN "turn on delay time"
-F 46 "-0.82V" H 8500 7150 50  0001 L CNN "typ forward diode voltage"
-	1    8500 2150
-	1    0    0    1   
-$EndComp
-Text HLabel 9400 2800 3    50   Input ~ 0
-VBatt
-Wire Wire Line
-	9000 2450 9000 2550
-Wire Wire Line
-	9400 2800 9400 2550
-Wire Wire Line
-	9400 1950 9100 1950
-Wire Wire Line
-	8600 2150 8600 1750
-Wire Wire Line
-	8600 1750 9100 1750
-Wire Wire Line
-	9100 1750 9100 1950
-Connection ~ 9100 1950
-Wire Wire Line
-	9100 1950 9000 1950
-Text Notes 8400 1450 0    50   ~ 0
-Switch should allow safe use of USB even if Batt is connected
-Text Notes 8800 1600 0    50   ~ 0
-THIS IS MOSTLY OPTIONAL
-$Comp
-L Jumper:Jumper_2_Open JP1
-U 1 1 5F47B7E2
-P 9200 2550
-F 0 "JP1" H 9200 2785 50  0000 C CNN
-F 1 "USB FET BYPASS" H 9200 2694 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 9200 2550 50  0001 C CNN
-F 3 "~" H 9200 2550 50  0001 C CNN
-	1    9200 2550
-	1    0    0    -1  
-$EndComp
-Connection ~ 9000 2550
-Wire Wire Line
-	9000 2550 9000 2800
-Connection ~ 9400 2550
-Wire Wire Line
-	9400 2550 9400 1950
 $Sheet
 S 2150 3950 500  850 
 U 5F4E7F96
@@ -404,4 +310,16 @@ Text HLabel 3050 4200 2    50   Input ~ 0
 12V_I_mon
 Wire Wire Line
 	2650 4200 3050 4200
+Wire Wire Line
+	1750 1900 1900 1900
+Wire Wire Line
+	1900 1900 1900 2000
+Connection ~ 1750 1900
+Connection ~ 1900 2000
+Wire Wire Line
+	1900 2200 1900 2300
+Wire Wire Line
+	1900 2300 1750 2300
+Connection ~ 1900 2200
+Connection ~ 1750 2300
 $EndSCHEMATC
