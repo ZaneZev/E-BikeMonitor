@@ -404,4 +404,16 @@ Text HLabel 3050 4200 2    50   Input ~ 0
 12V_I_mon
 Wire Wire Line
 	2650 4200 3050 4200
+Wire Wire Line
+	1750 1900 1900 1900
+Wire Wire Line
+	1900 1900 1900 2000
+Connection ~ 1750 1900
+Connection ~ 1900 2000
+Wire Wire Line
+	1900 2200 1900 2300
+Wire Wire Line
+	1900 2300 1750 2300
+Connection ~ 1900 2200
+Connection ~ 1750 2300
 $EndSCHEMATC
