@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 2 5
 Title ""
 Date ""
 Rev ""
@@ -297,7 +297,7 @@ U 1 1 5F464E1B
 P 8500 2150
 F 0 "Q1" H 9188 2154 50  0000 L CNN
 F 1 "DMP10H4D2S-7" H 9188 2245 50  0000 L CNN
-F 2 "Diodes_Inc.-SOT23-01_2017-0-*" H 8500 2750 50  0001 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8500 2750 50  0001 L CNN
 F 3 "https://www.diodes.com/assets/Datasheets/DMP10H4D2S.pdf" H 8500 2850 50  0001 L CNN
 F 4 "Yes" H 8500 2950 50  0001 L CNN "automotive"
 F 5 "Grade 0" H 8500 3050 50  0001 L CNN "automotive grade"

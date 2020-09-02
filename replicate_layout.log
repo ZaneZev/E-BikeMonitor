@@ -1,0 +1,93 @@
+09-02 12:03:08 replicate_layout.action_replicate_layout 305:Plugin executed on: 'win32'
+09-02 12:03:08 replicate_layout.action_replicate_layout 306:Plugin executed with python version: '2.7.16 (default, Aug 15 2019, 17:51:40)  [GCC 9.2.0 64 bit (AMD64)]'
+09-02 12:03:08 replicate_layout.action_replicate_layout 307:KiCad build version: (5.1.6)-1
+09-02 12:03:08 replicate_layout.action_replicate_layout 308:Replicate layout plugin version: 60 started
+09-02 12:03:08 replicate_layout.action_replicate_layout 340:Preparing replicator with L2 as a reference
+09-02 12:03:08 replicate_layout.replicatelayout 225:getting project hierarchy from schematics
+09-02 12:03:08 replicate_layout.replicatelayout 227:Project hierarchy looks like:
+{'5F3EA406': ['Sheet5F3EA405', u'C:\\Users\\Zane Young\\Documents\\EbikeSupeMon\\High Power.sch'], '5F601C41': ['5v Reg', u'C:\\Users\\Zane Young\\Documents\\EbikeSupeMon\\5v Reg.sch'], '5F5F868F': ['3.3v reg', u'C:\\Users\\Zane Young\\Documents\\EbikeSupeMon\\3.3v reg.sch'], '5F4E7F96': ['Vreg', u'C:\\Users\\Zane Young\\Documents\\EbikeSupeMon\\file5F4E7F95.sch']}
+09-02 12:03:08 replicate_layout.replicatelayout 235:getting a list of all footprints on board
+09-02 12:03:08 replicate_layout.action_replicate_layout 367:source anchor footprint is u'L2'
+Located on:['Sheet5F3EA405', 'Vreg', '3.3v reg']
+With filenames:[u'High Power.sch', u'file5F4E7F95.sch', u'3.3v reg.sch']
+With sheet_id:['Sheet5F3EA405', 'Vreg', '3.3v reg']
+09-02 12:03:08 replicate_layout.action_replicate_layout 371:Corresponding footprints are 
+[(u'L2', ['Sheet5F3EA405', 'Vreg', '3.3v reg'])]
+09-02 12:03:08 replicate_layout.action_replicate_layout 384:Showing dialog
+09-02 12:03:08 replicate_layout.action_replicate_layout 388:Pcbnew position: wx.Point(1273, 0)
+09-02 12:03:08 replicate_layout.action_replicate_layout 394:Display 0: wx.Rect(0, 0, 2560, 1440)
+09-02 12:03:08 replicate_layout.action_replicate_layout 398:Toolbar position: wx.Point(2361, 123)
+09-02 12:03:08 replicate_layout.action_replicate_layout 405:Dialog position: wx.Point(2048, 123)
+09-02 12:03:12 replicate_layout.replicatelayout 259:construcing a list of sheets suitable for replication on level:'3.3v reg', file:u'3.3v reg.sch'
+09-02 12:03:12 replicate_layout.replicatelayout 266:Source sheet path up to the level:['Sheet5F3EA405', 'Vreg', '3.3v reg']
+09-02 12:03:12 replicate_layout.replicatelayout 270:Footprints on the sheets:
+[u'L2']
+09-02 12:03:12 replicate_layout.replicatelayout 273:Footprints raw sheet ids:
+[u'/5F3EA406/5F4E7F96/5F5F868F/5F5FE8A0']
+09-02 12:03:12 replicate_layout.replicatelayout 289:All sheets to replicate:
+[['Sheet5F3EA405', 'Vreg', '3.3v reg']]
+09-02 12:03:12 replicate_layout.replicatelayout 294:All sheets to replicate sorted:
+[['Sheet5F3EA405', 'Vreg', '3.3v reg']]
+09-02 12:03:12 replicate_layout.replicatelayout 300:All sheets to replicate sorted and without source sheet:
+[]
+09-02 12:03:13 replicate_layout.replicatelayout 259:construcing a list of sheets suitable for replication on level:'Vreg', file:u'file5F4E7F95.sch'
+09-02 12:03:13 replicate_layout.replicatelayout 266:Source sheet path up to the level:['Sheet5F3EA405', 'Vreg']
+09-02 12:03:13 replicate_layout.replicatelayout 270:Footprints on the sheets:
+[u'L2']
+09-02 12:03:13 replicate_layout.replicatelayout 273:Footprints raw sheet ids:
+[u'/5F3EA406/5F4E7F96/5F5F868F/5F5FE8A0']
+09-02 12:03:13 replicate_layout.replicatelayout 289:All sheets to replicate:
+[['Sheet5F3EA405', 'Vreg']]
+09-02 12:03:13 replicate_layout.replicatelayout 294:All sheets to replicate sorted:
+[['Sheet5F3EA405', 'Vreg']]
+09-02 12:03:13 replicate_layout.replicatelayout 300:All sheets to replicate sorted and without source sheet:
+[]
+09-02 12:03:16 replicate_layout.replicatelayout 259:construcing a list of sheets suitable for replication on level:'Sheet5F3EA405', file:u'High Power.sch'
+09-02 12:03:16 replicate_layout.replicatelayout 266:Source sheet path up to the level:['Sheet5F3EA405']
+09-02 12:03:16 replicate_layout.replicatelayout 270:Footprints on the sheets:
+[u'L2']
+09-02 12:03:16 replicate_layout.replicatelayout 273:Footprints raw sheet ids:
+[u'/5F3EA406/5F4E7F96/5F5F868F/5F5FE8A0']
+09-02 12:03:16 replicate_layout.replicatelayout 289:All sheets to replicate:
+[['Sheet5F3EA405']]
+09-02 12:03:16 replicate_layout.replicatelayout 294:All sheets to replicate sorted:
+[['Sheet5F3EA405']]
+09-02 12:03:16 replicate_layout.replicatelayout 300:All sheets to replicate sorted and without source sheet:
+[]
+09-02 12:03:31 replicate_layout.replicatelayout 259:construcing a list of sheets suitable for replication on level:'Vreg', file:u'file5F4E7F95.sch'
+09-02 12:03:31 replicate_layout.replicatelayout 266:Source sheet path up to the level:['Sheet5F3EA405', 'Vreg']
+09-02 12:03:31 replicate_layout.replicatelayout 270:Footprints on the sheets:
+[u'L2']
+09-02 12:03:31 replicate_layout.replicatelayout 273:Footprints raw sheet ids:
+[u'/5F3EA406/5F4E7F96/5F5F868F/5F5FE8A0']
+09-02 12:03:31 replicate_layout.replicatelayout 289:All sheets to replicate:
+[['Sheet5F3EA405', 'Vreg']]
+09-02 12:03:31 replicate_layout.replicatelayout 294:All sheets to replicate sorted:
+[['Sheet5F3EA405', 'Vreg']]
+09-02 12:03:31 replicate_layout.replicatelayout 300:All sheets to replicate sorted and without source sheet:
+[]
+09-02 12:03:37 replicate_layout.replicatelayout 259:construcing a list of sheets suitable for replication on level:'3.3v reg', file:u'3.3v reg.sch'
+09-02 12:03:37 replicate_layout.replicatelayout 266:Source sheet path up to the level:['Sheet5F3EA405', 'Vreg', '3.3v reg']
+09-02 12:03:37 replicate_layout.replicatelayout 270:Footprints on the sheets:
+[u'L2']
+09-02 12:03:37 replicate_layout.replicatelayout 273:Footprints raw sheet ids:
+[u'/5F3EA406/5F4E7F96/5F5F868F/5F5FE8A0']
+09-02 12:03:37 replicate_layout.replicatelayout 289:All sheets to replicate:
+[['Sheet5F3EA405', 'Vreg', '3.3v reg']]
+09-02 12:03:37 replicate_layout.replicatelayout 294:All sheets to replicate sorted:
+[['Sheet5F3EA405', 'Vreg', '3.3v reg']]
+09-02 12:03:37 replicate_layout.replicatelayout 300:All sheets to replicate sorted and without source sheet:
+[]
+09-02 12:03:41 replicate_layout.replicatelayout 259:construcing a list of sheets suitable for replication on level:'Vreg', file:u'file5F4E7F95.sch'
+09-02 12:03:41 replicate_layout.replicatelayout 266:Source sheet path up to the level:['Sheet5F3EA405', 'Vreg']
+09-02 12:03:41 replicate_layout.replicatelayout 270:Footprints on the sheets:
+[u'L2']
+09-02 12:03:41 replicate_layout.replicatelayout 273:Footprints raw sheet ids:
+[u'/5F3EA406/5F4E7F96/5F5F868F/5F5FE8A0']
+09-02 12:03:41 replicate_layout.replicatelayout 289:All sheets to replicate:
+[['Sheet5F3EA405', 'Vreg']]
+09-02 12:03:41 replicate_layout.replicatelayout 294:All sheets to replicate sorted:
+[['Sheet5F3EA405', 'Vreg']]
+09-02 12:03:41 replicate_layout.replicatelayout 300:All sheets to replicate sorted and without source sheet:
+[]
+09-02 12:06:13 replicate_layout.action_replicate_layout 252:User canceled the dialog
