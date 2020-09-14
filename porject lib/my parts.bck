@@ -9,10 +9,6 @@ $CMP AP62200
 F https://www.diodes.com/assets/Datasheets/AP62200.pdf
 $ENDCMP
 #
-$CMP AP62300
-F https://www.diodes.com/assets/Datasheets/AP62200.pdf
-$ENDCMP
-#
 $CMP ESP32-WROOM-32
 D RF Module, ESP32-D0WDQ6 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 2.7-3.6V, SMD
 K RF Radio BT ESP ESP32 Espressif
