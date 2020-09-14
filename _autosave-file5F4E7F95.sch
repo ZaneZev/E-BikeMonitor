@@ -1,0 +1,267 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 1600 3700 0    50   ~ 0
+Bat Voltage to 12V at 2.3A\n
+Text Notes 650  3800 0    50   ~ 0
+A higher current regulator with an external fet is availabel from the same manufacturer
+Wire Wire Line
+	2900 5550 2600 5550
+Text HLabel 2900 5550 2    50   Input ~ 0
+12V_I_mon
+$Comp
+L power:GND #PWR0127
+U 1 1 5F522AE1
+P 3450 5400
+F 0 "#PWR0127" H 3450 5150 50  0001 C CNN
+F 1 "GND" H 3455 5227 50  0000 C CNN
+F 2 "" H 3450 5400 50  0001 C CNN
+F 3 "" H 3450 5400 50  0001 C CNN
+	1    3450 5400
+	1    0    0    -1  
+$EndComp
+Connection ~ 3450 5100
+$Comp
+L Device:C C6
+U 1 1 5F5222CC
+P 3450 5250
+F 0 "C6" H 3565 5296 50  0000 L CNN
+F 1 "47uF 25v X5R" H 3565 5205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3488 5100 50  0001 C CNN
+F 3 "~" H 3450 5250 50  0001 C CNN
+	1    3450 5250
+	1    0    0    -1  
+$EndComp
+Connection ~ 3450 4950
+Wire Wire Line
+	3600 4950 3450 4950
+$Comp
+L power:+12V #PWR0126
+U 1 1 5F521459
+P 3600 4950
+F 0 "#PWR0126" H 3600 4800 50  0001 C CNN
+F 1 "+12V" V 3615 5078 50  0000 L CNN
+F 2 "" H 3600 4950 50  0001 C CNN
+F 3 "" H 3600 4950 50  0001 C CNN
+	1    3600 4950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2700 5100 3450 5100
+Wire Wire Line
+	3450 4950 3350 4950
+Wire Wire Line
+	3450 5100 3450 4950
+Connection ~ 2750 4950
+Wire Wire Line
+	2750 4950 3050 4950
+$Comp
+L Device:L L1
+U 1 1 5F51F68B
+P 3200 4950
+F 0 "L1" V 3390 4950 50  0000 C CNN
+F 1 "47uH" V 3299 4950 50  0000 C CNN
+F 2 "Inductor_SMD:L_Wuerth_WE-PD-Typ-LS" H 3200 4950 50  0001 C CNN
+F 3 "~" H 3200 4950 50  0001 C CNN
+	1    3200 4950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2600 4650 2750 4650
+Wire Wire Line
+	2600 4800 2600 4650
+Wire Wire Line
+	2600 4950 2750 4950
+$Comp
+L Device:C C5
+U 1 1 5F51DDDA
+P 2750 4800
+F 0 "C5" H 2865 4846 50  0000 L CNN
+F 1 "0.1uF 100v X7R" H 2865 4755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2788 4650 50  0001 C CNN
+F 3 "~" H 2750 4800 50  0001 C CNN
+	1    2750 4800
+	1    0    0    -1  
+$EndComp
+Connection ~ 2700 5100
+Wire Wire Line
+	2700 5250 2700 5100
+Wire Wire Line
+	2600 5250 2700 5250
+Wire Wire Line
+	2600 5100 2700 5100
+Connection ~ 2700 5700
+Wire Wire Line
+	2700 5400 2700 5700
+Wire Wire Line
+	2600 5400 2700 5400
+$Comp
+L power:GND #PWR0125
+U 1 1 5F51B35E
+P 2050 6200
+F 0 "#PWR0125" H 2050 5950 50  0001 C CNN
+F 1 "GND" H 2055 6027 50  0000 C CNN
+F 2 "" H 2050 6200 50  0001 C CNN
+F 3 "" H 2050 6200 50  0001 C CNN
+	1    2050 6200
+	1    0    0    -1  
+$EndComp
+Connection ~ 2700 5850
+Wire Wire Line
+	2700 5700 2700 5850
+Wire Wire Line
+	2600 5700 2700 5700
+Wire Wire Line
+	2700 5850 2600 5850
+Wire Wire Line
+	2700 5900 2700 5850
+Wire Wire Line
+	2050 6200 2200 6200
+Connection ~ 2050 6200
+Wire Wire Line
+	2050 6050 2050 6200
+Wire Wire Line
+	2200 6200 2700 6200
+Connection ~ 2200 6200
+Wire Wire Line
+	2200 6050 2200 6200
+Wire Wire Line
+	1500 5850 1500 6200
+Wire Wire Line
+	1500 6200 2050 6200
+$Comp
+L Device:C C4
+U 1 1 5F519750
+P 2700 6050
+F 0 "C4" H 2815 6096 50  0000 L CNN
+F 1 "1uF X5R 5v" H 2815 6005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2738 5900 50  0001 C CNN
+F 3 "~" H 2700 6050 50  0001 C CNN
+	1    2700 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 5700 1500 5850
+Connection ~ 1500 5700
+Wire Wire Line
+	1650 5700 1500 5700
+Connection ~ 1500 5850
+Wire Wire Line
+	1650 5850 1500 5850
+Wire Wire Line
+	1500 5550 1500 5700
+Wire Wire Line
+	1650 5550 1500 5550
+NoConn ~ 1650 5250
+NoConn ~ 1650 5400
+Connection ~ 1500 4550
+Wire Wire Line
+	1500 4550 1500 5100
+$Comp
+L power:GND #PWR0124
+U 1 1 5F5179E9
+P 1500 4150
+F 0 "#PWR0124" H 1500 3900 50  0001 C CNN
+F 1 "GND" H 1505 3977 50  0000 C CNN
+F 2 "" H 1500 4150 50  0001 C CNN
+F 3 "" H 1500 4150 50  0001 C CNN
+	1    1500 4150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1500 4550 1500 4450
+Wire Wire Line
+	1450 4550 1500 4550
+Wire Wire Line
+	1150 4550 1100 4550
+Text HLabel 1100 4550 0    50   Input ~ 0
+EN
+$Comp
+L Device:R R8
+U 1 1 5F515BBF
+P 1300 4550
+F 0 "R8" V 1093 4550 50  0000 C CNN
+F 1 "1k" V 1184 4550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1230 4550 50  0001 C CNN
+F 3 "~" H 1300 4550 50  0001 C CNN
+	1    1300 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5F5152A5
+P 1500 4300
+F 0 "R9" H 1570 4346 50  0000 L CNN
+F 1 "2k" H 1570 4255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1430 4300 50  0001 C CNN
+F 3 "~" H 1500 4300 50  0001 C CNN
+	1    1500 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 5100 1650 5100
+Wire Wire Line
+	1200 4800 1650 4800
+$Comp
+L power:GND #PWR0123
+U 1 1 5F513912
+P 1200 5100
+F 0 "#PWR0123" H 1200 4850 50  0001 C CNN
+F 1 "GND" H 1205 4927 50  0000 C CNN
+F 2 "" H 1200 5100 50  0001 C CNN
+F 3 "" H 1200 5100 50  0001 C CNN
+	1    1200 5100
+	1    0    0    -1  
+$EndComp
+Connection ~ 1200 4800
+$Comp
+L Device:C C3
+U 1 1 5F512C39
+P 1200 4950
+F 0 "C3" H 1315 4996 50  0000 L CNN
+F 1 "4.7uF 100v XR7" H 1315 4905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1238 4800 50  0001 C CNN
+F 3 "~" H 1200 4950 50  0001 C CNN
+	1    1200 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 4800 1200 4800
+Text HLabel 1150 4800 0    50   Input ~ 0
+Vin
+$Comp
+L my_parts:LTC7103 U3
+U 1 1 5F510178
+P 2100 5400
+F 0 "U3" H 2125 6331 50  0000 C CNN
+F 1 "LTC7103" H 2125 6240 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-36-1EP_5x6mm_P0.5mm_EP3.6x4.6mm_ThermalVias" H 2150 6350 50  0001 C CNN
+F 3 "" H 2150 6350 50  0001 C CNN
+	1    2100 5400
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 6650 5100 2500 1000
+U 5F5F868F
+F0 "3.3v reg" 50
+F1 "3.3v reg.sch" 50
+$EndSheet
+$Sheet
+S 7150 3350 1950 900 
+U 5F601C41
+F0 "5v Reg" 50
+F1 "5v Reg.sch" 50
+$EndSheet
+$EndSCHEMATC
